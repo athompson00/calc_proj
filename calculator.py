@@ -27,7 +27,7 @@ def f(n):
                 newExp += int(args[counter])
         if args[counter] == 'x':
             if (counter != len(args) - 1) and "^" in args[counter+1]:
-                newExp += n**args[counter+2]
+                newExp += n**int(args[counter+2])
             else:
                 newExp += int(n)
         if args[counter] == '+':
